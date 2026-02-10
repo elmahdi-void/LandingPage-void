@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-global: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-primary: #BD1469;
+  --color-secondary: #354858;
+  --color-placeholder: #C4C4C4;
+}
+
+.hero-section {
+    background-image: url('/public/heroBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark .hero-section {
+  background-image: url('/public/darkbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
