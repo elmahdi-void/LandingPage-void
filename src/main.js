@@ -103,3 +103,49 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Scroll Animation for Posts
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const card = entry.target;
+      // Add a small delay based on the index (calculated via dataset or just reliable if order is preserved)
+      // But standard interaction observer might trigger all at once.
+      // let's just add the class.
+      card.classList.add('visible');
+      observer.unobserve(card); // Only animate once
+    }
+  });
+}, observerOptions);
+
+const cards = document.querySelectorAll('.posts-grid .card');
+cards.forEach((card, index) => {
+  card.style.transitionDelay = `${index * 100}ms`; // Stagger effect
+  observer.observe(card);
+});
+
+
+const observer2 = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const featureItem = entry.target;
+      const left = featureItem.querySelector('.feature-right');
+      const right = featureItem.querySelector('.feature-left');
+    
+      left.classList.add('visible');
+      right.classList.add('visible');
+      observer.unobserve(featureItem); 
+    }
+  });
+}, observerOptions);
+
+const featureItems = document.querySelectorAll('.feature-item');
+featureItems.forEach((featureItem, index) => {
+  featureItem.style.transitionDelay = `${index * 100}ms`; // Stagger effect
+  observer2.observe(featureItem);
+});
