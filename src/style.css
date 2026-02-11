@@ -12,13 +12,13 @@
 }
 
 .hero-section {
-    background-image: url('/public/heroBg.png');
+    background-image: url('/heroBg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .dark .hero-section {
-  background-image: url('/public/darkbg.png');
+  background-image: url('/darkBg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
