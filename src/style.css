@@ -6,6 +6,9 @@
   --color-primary: #BD1469;
   --color-secondary: #354858;
   --color-placeholder: #C4C4C4;
+  --color-itemsBg: #F2F5F8;
+  --color-card: #E4ECF4;
+  --color-next: #CCC;
 }
 
 .hero-section {

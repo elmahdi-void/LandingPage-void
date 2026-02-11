@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function goToSlide(index) {
       if (index < 0) {
-        index = 0;
-      } else if (index >= slide.length) {
         index = slide.length - 1;
+      } else if (index >= slide.length) {
+        index = 0;
       }
       slides.style.transform = `translateX(-${index * slideWidth}px)`;
       currentIndex = index;
@@ -102,3 +102,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
