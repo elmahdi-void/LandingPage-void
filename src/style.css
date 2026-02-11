@@ -3,7 +3,7 @@
 
 @theme {
   --font-global: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --color-primary: #BD1469;
+  --color-primary: #991055;
   --color-secondary: #354858;
   --color-placeholder: #C4C4C4;
   --color-itemsBg: #F2F5F8;
@@ -12,27 +12,47 @@
 }
 
 .hero-section {
-    background-image: url('/heroBg.png');
+    background-image: url('/heroBg.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .dark .hero-section {
-  background-image: url('/darkBg.png');
+  background-image: url('/darkBg.webp');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Smooth Theme Transition */
+body, header, footer, section, button, input, .bg-card, 
+h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
 }
 
 /* Post Cards Animation */
 .posts-grid .card {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  /* Combine animations */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, background-color 0.5s ease, color 0.5s ease;
 }
 
 .posts-grid .card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Contact Form Dropdown Animation */
+.contact-form-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.contact-form-container.active {
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .feature-item .feature-left {

@@ -149,3 +149,84 @@ featureItems.forEach((featureItem, index) => {
   featureItem.style.transitionDelay = `${index * 100}ms`; // Stagger effect
   observer2.observe(featureItem);
 });
+
+// Contact Us Dropdown Toggle
+const contactBtn = document.getElementById('contact-us-btn');
+const contactDropdown = document.getElementById('contact-form-dropdown');
+
+if (contactBtn && contactDropdown) {
+  contactBtn.addEventListener('click', () => {
+    contactDropdown.classList.toggle('active');
+    
+    // Smooth scroll to the form if opening
+    if (contactDropdown.classList.contains('active')) {
+      setTimeout(() => {
+        contactDropdown.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    }
+  });
+}
+
+// Handle Contact Form Submission
+const contactForm = contactDropdown?.querySelector('form');
+if (contactForm) {
+  // Regex patterns for validation
+  const validationPatterns = {
+    name: /^[a-zA-Z\s]{2,}$/,
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    message: /^.{1,19}$/ // Matches message with less than 20 characters
+  };
+
+  // Select all form inputs for easy access
+  const formInputs = {
+    name: contactForm.querySelector('#name'),
+    email: contactForm.querySelector('#contact-email'),
+    message: contactForm.querySelector('#message')
+  };
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Example of how to use the captured inputs:
+    
+
+    const btn = contactForm.querySelector('button[type="submit"]');
+    if (!btn) return;
+    const originalText = btn.textContent;
+    
+    // Simple feedback animation
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    
+
+    if (!formInputs.name || !validationPatterns.name.test(formInputs.name.value)) {
+      formInputs.name.classList.add('border-red-500','dark:border-red-500', 'text-red-500' ,"dark:text-red-500");
+     
+    } else if (!formInputs.email || !validationPatterns.email.test(formInputs.email.value)) {
+      formInputs.email.classList.add('border-red-500','dark:border-red-500', 'text-red-500' ,"dark:text-red-500");
+    
+    } else if (!formInputs.message || !validationPatterns.message.test(formInputs.message.value)) {
+      formInputs.message.classList.add('border-red-500','dark:border-red-500', 'text-red-500' ,"dark:text-red-500");
+    } else {
+       btn.textContent = 'Message Sent!';
+      btn.classList.add('bg-green-600');
+      btn.classList.remove('bg-primary');
+      contactForm.reset();// Replace with actual submission logic
+       setTimeout(() => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        btn.classList.add('bg-primary');
+        btn.classList.remove('bg-green-600');
+        contactDropdown.classList.remove('active');
+      }, 2000);
+        
+    }
+
+    setTimeout(() => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        btn.classList.add('bg-primary');
+        btn.classList.remove('bg-green-600');
+      }, 2000);
+  });
+}
