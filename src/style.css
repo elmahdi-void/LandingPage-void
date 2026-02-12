@@ -2,31 +2,54 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-global: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-global:
+    "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-primary: #991055;
   --color-secondary: #354858;
-  --color-placeholder: #C4C4C4;
-  --color-itemsBg: #F2F5F8;
-  --color-card: #E4ECF4;
-  --color-next: #CCC;
+  --color-placeholder: #c4c4c4;
+  --color-itemsBg: #f2f5f8;
+  --color-card: #e4ecf4;
+  --color-next: #ccc;
 }
 
 .hero-section {
-    background-image: url('/heroBg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("/heroBg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark .hero-section {
-  background-image: url('/darkBg.webp');
+  background-image: url("/darkBg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* Smooth Theme Transition */
-body, header, footer, section, button, input, .bg-card, 
-h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
-  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
+body,
+header,
+footer,
+section,
+button,
+input,
+.bg-card,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+svg,
+path {
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    fill 0.5s ease,
+    stroke 0.5s ease;
 }
 
 /* Post Cards Animation */
@@ -36,20 +59,20 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
   transform: translateY(30px);
   max-height: 700px; /* Set to a value that can accommodate the content */
   /* Combine animations */
-  transition: opacity 0.6s ease-out,
-   transform 0.6s ease-out,
-    background-color 0.5s ease, 
-    color 0.5s ease ,
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    background-color 0.5s ease,
+    color 0.5s ease,
     max-height 0.2s ease;
 }
 
-.posts-grid  {
-   transition: 
-   transform 0.6s ease-out,
-    background-color 0.5s ease, 
-    color 0.5s ease ,
+.posts-grid {
+  transition:
+    transform 0.6s ease-out,
+    background-color 0.5s ease,
+    color 0.5s ease,
     max-height 0.4s ease;
-
 }
 
 .posts-grid .card.visible {
@@ -62,12 +85,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
   pointer-events: none;
 }
 
-
 /* Contact Form Dropdown Animation */
 .contact-form-container {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition:
+    max-height 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   opacity: 0;
 }
 
@@ -79,7 +103,9 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
 .feature-item .feature-left {
   opacity: 0;
   transform: translateY(-30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 .feature-item .feature-left.visible {
   opacity: 1;
@@ -89,14 +115,25 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
 .feature-item .feature-right {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 .feature-item .feature-right.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+.coontact-form-container .error-message {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.contact-form-container .error-message.visible {
+  opacity: 1;
+}
 
+.contact-form-container .input-error {
 
-
-.coontact-form-container .error-message { opacity: 0; transition: opacity 0.3s ease-in-out; } .contact-form-container .error-message.visible { opacity: 1; }
+  border-color: red;
+  color: red;
+}
