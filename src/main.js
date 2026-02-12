@@ -115,9 +115,6 @@ const submitForm =  (formInputs, errorMessages, validationPatterns, contactForm)
     }, 2000);
 };
   
-
-
-
 // ################### Mobile Menu Toggle Logic #######################
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const closeMenuBtn = document.getElementById("close-menu-btn");
@@ -261,7 +258,6 @@ if (contactForm) {
 const viewMoreBtn = document.querySelector(".view-more-posts");
 const miniToShow = 6;
 if (viewMoreBtn) {
-  console.log("View More button clicked");
   viewMoreBtn.addEventListener("click", () => {
     console.log("View More button clicked");
     const Cards = document.querySelectorAll(".posts-grid .card");
