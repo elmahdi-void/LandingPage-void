@@ -11,12 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <title>Nebula Digital Solutions | Navigate the Digital Future</title>
-  <meta name="description" content="Nebula Digital Solutions offers innovative web development, AI integration, and digital strategy services to help businesses scale in the modern era.">
-  <meta name="keywords" content="web development, AI, digital transformation, cloud computing, UI/UX design, cybersecurity">
-  
+  <meta name="description"
+    content="Nebula Digital Solutions offers innovative web development, AI integration, and digital strategy services to help businesses scale in the modern era.">
+  <meta name="keywords"
+    content="web development, AI, digital transformation, cloud computing, UI/UX design, cybersecurity">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Nebula Digital Solutions | Navigate the Digital Future">
-  <meta property="og:description" content="Nebula Digital Solutions offers innovative web development, AI integration, and digital strategy services.">
+  <meta property="og:description"
+    content="Nebula Digital Solutions offers innovative web development, AI integration, and digital strategy services.">
   <meta property="og:image" content="/heroBg.webp">
   <meta property="og:type" content="website">
 </head>
@@ -27,7 +30,7 @@
       class=" h-20 z-50 flex w-full flex-row justify-between px-4 md:px-10 lg:px-20 py-auto items-center sticky top-0 bg-white dark:bg-gray-900 shadow-sm transition-colors duration-300">
       <div class="logo flex  flex-col">
         <h2 class="text-primary text-[22px] font-bold">Nebula : Digital Solutions</h2>
-          <p class="text-[11px] text-secondary dark:text-gray-400">Innovating the digital void for your business</p>
+        <p class="text-[11px] text-secondary dark:text-gray-400">Innovating the digital void for your business</p>
       </div>
 
       <div class="flex items-center gap-4">
@@ -40,7 +43,8 @@
         </div>
 
         <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+        <button id="theme-toggle" aria-label="Toggle dark mode"
+          class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
           <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -80,325 +84,428 @@
       </button>
     </div>
     <main>
-    <div class="hero-section  px-4 md:px-10 lg:px-20 h-[70vh] relative  overflow-hidden">
-      <div class="content flex flex-col md:flex-row content-center-safe mt-20  justify-between">
-        <div class="   flex flex-col gap-5  w-full md:w-125 z-10">
-          <h1 class="text-[30px] md:text-[40px] text-black dark:text-white font-global w-full md:w-75 font-bold ">
-            Navigate the Digital Future</h1>
-          <div class="w-15 bg-primary py-0.5"></div>
-          <p class="text-[18px] text-secondary dark:text-gray-300">We transform ideas into digital reality. 
-            From web development to AI integration, we help businesses scale in the modern era.
-            Join us in exploring the infinite possibilities of the digital void.</p>
-          <button class="p-2 bg-primary w-fit text-white font-medium">Get Started</button>
-        </div>
+      <div class="hero-section  px-4 md:px-10 lg:px-20 h-[70vh] relative  overflow-hidden">
+        <div class="content flex flex-col md:flex-row content-center-safe mt-20  justify-between">
+          <div class="   flex flex-col gap-5  w-full md:w-125 z-10">
+            <h1 class="text-[30px] md:text-[40px] text-black dark:text-white font-global w-full md:w-75 font-bold ">
+              Navigate the Digital Future</h1>
+            <div class="w-15 bg-primary py-0.5"></div>
+            <p class="text-[18px] text-secondary dark:text-gray-300">We transform ideas into digital reality.
+              From web development to AI integration, we help businesses scale in the modern era.
+              Join us in exploring the infinite possibilities of the digital void.</p>
+            <button class="p-2 bg-primary w-fit text-white font-medium">Get Started</button>
+          </div>
 
-        <div class=" w-100 h-100 z-5 rounded-[50%] overflow-hidden hidden md:flex items-center justify-center text-center"  >
- <img src="/hero2.webp" class=" h-full" alt="Nebula Digital Hero Visualization" fetchpriority="high">       
- </div>
+          <div
+            class=" w-100 h-100 z-5 rounded-[50%] overflow-hidden hidden md:flex items-center justify-center text-center">
 
-      </div>
-    </div>
-    <!-- Blur Separator -->
-    <div class="w-full h-20 -mt-20 relative z-20 pointer-events-none bg-gradient-to-t from-white via-white/80 to-transparent dark:from-black dark:via-black/80 backdrop-blur-sm"></div>
+            <picture>
+              <source media="(max-width: 767px)" srcset="/mobile/hero2.webp">
 
-    <section class="features-section px-4 md:px-20 lg:px-40 py-10 md:py-20 flex items-center flex-col gap-10 md:gap-20">
-      <h2 class="text-3xl font-bold w-fit dark:text-white">Why Choose Nebula?</h2>
+              <img src="/hero2.webp" class=" h-full" alt="Nebula Digital Hero Visualization" fetchpriority="high">
+            </picture>
 
-      <div class="feature-item flex flex-col md:flex-row justify-between items-center">
-        <div class=" feature-right w-1/2 h-64 hidden md:flex items-center justify-center  ">
-            <img src="/teamUi.webp" class="h-full w-full md:w-3/4" alt="Team working on UI/UX Design" loading="lazy">
-        </div>
-        <div class="feature-left w-full md:w-1/2 flex flex-col gap-5 md:pl-10">
-          <h3 class="text-3xl font-bold dark:text-white">Innovative Design & Strategy</h3>
-          <p class="text-secondary dark:text-gray-400">Our team combines aesthetic excellence with data-driven strategy to deliver products that not only look good but perform exceptionally. We believe that great design is not just about how it looks, but how it works for your users.</p>
-          <button class="p-2 bg-primary w-fit text-white font-medium">Learn More</button>
+          </div>
+
         </div>
       </div>
-
-      <h2 class="text-3xl font-bold w-fit dark:text-white">Our Expertise</h2>
-      <div class="feature-item flex flex-col md:flex-row justify-between items-center">
-        <div class="feature-left w-full md:w-1/2 flex flex-col gap-5 md:pr-10">
-          <h3 class="text-3xl font-bold dark:text-white">Scalable Technology Solutions</h3>
-          <p class="text-secondary dark:text-gray-400">Built on robust architectures, our solutions are designed to grow with your business. Whether you are a startup or an enterprise, we ensure stability, security, and performance at every scale.</p>
-          <button class="p-2 bg-primary w-fit text-white font-medium">View Technologies</button>
-        </div>
-        <div class=" feature-right w-1/2 h-64 hidden md:flex items-center justify-center">
-            <img src="/serverRoom.webp" class="h-full w-full md:w-3/4" alt="Scalable Server Infrastructure" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-
-    <section class="posts-section bg-itemsBg dark:bg-gray-800  px-4 md:px-10 lg:px-20 py-5 md:py-10 flex flex-col gap-10 items-center">
-      <h2 class="text-3xl font-bold text-center dark:text-white">Latest Insights & <br> Industry Trends</h2>
-      <div class="posts-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-          <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/aiBrain.webp" class="h-full w-full" alt="Artificial Intelligence Concept" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Tech</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">ARTIFICIAL INTELLIGENCE</p>
-            <h3 class="text-xl dark:text-white font-bold">The Future of AI in Web Development</h3>
-            <p class="text-secondary dark:text-gray-400">Discover how artificial intelligence is reshaping the way we build and interact with the web. From automated testing to intelligent code generation.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-          <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center ">
-            <img src="/mimalUi.webp" class="h-full w-full" alt="Minimalist Interface Design" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Design</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">UI/UX DESIGN</p>
-            <h3 class="text-xl dark:text-white font-bold">Minimalism in Modern Interfaces</h3>
-            <p class="text-secondary dark:text-gray-400">Less is more. Explore the core principles of minimalist design and how removing clutter can improve user engagement and conversion rates.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-          <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/cloudeServer.webp" class="h-full w-full" alt="Cloud Server Architecture" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Cloud</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">CLOUD COMPUTING</p>
-            <h3 class="text-xl dark:text-white font-bold">Scaling Your Infrastructure</h3>
-            <p class="text-secondary dark:text-gray-400">Strategies for scaling your cloud infrastructure efficiently. Learn about microservices, containerization, and serverless architectures.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-          <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-             <img src="/coddingScreen.webp" class="h-full w-full" alt="Coding Screen" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Dev</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">DEVELOPMENT</p>
-            <h3 class="text-xl dark:text-white font-bold">Clean Code Practices</h3>
-            <p class="text-secondary dark:text-gray-400">Writing code that is easy to understand and maintain is a crucial skill. Here are top tips for keeping your codebase clean.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-<div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/mobileApp.webp" class="h-full w-full" alt="Mobile Application Development" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Mobile</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">MOBILE APPS</p>
-            <h3 class="text-xl dark:text-white font-bold">React Native vs Flutter</h3>
-            <p class="text-secondary dark:text-gray-400">A comprehensive comparison of the two leading cross-platform mobile frameworks. Which one should you choose for your next project?</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-<div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/lock.webp" class="h-full w-full" alt="Cybersecurity Shield" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Security</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">CYBERSECURITY</p>
-            <h3 class="text-xl dark:text-white font-bold">Web Security Essentials</h3>
-            <p class="text-secondary dark:text-gray-400">Protecting your web applications from common vulnerabilities. Understanding XSS, CSRF, and SQL Injection attacks.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card hide bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-<div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/lock.webp" class="h-full w-full" alt="Cybersecurity Shield" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Security</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">CYBERSECURITY</p>
-            <h3 class="text-xl dark:text-white font-bold">Web Security Essentials</h3>
-            <p class="text-secondary dark:text-gray-400">Protecting your web applications from common vulnerabilities. Understanding XSS, CSRF, and SQL Injection attacks.</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-        <div class="card hide bg-white dark:bg-gray-950 flex flex-col shadow-md ">
-<div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
-            <img src="/mobileApp.webp" class="h-full w-full" alt="Mobile Application Development" loading="lazy">
-            <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
-              <span>Mobile</span>
-            </div>
-          </div>
-
-          <div class="  p-5 flex flex-col gap-4 mt-4">
-            <p class="font-normal text-secondary dark:text-gray-400 text-xs">MOBILE APPS</p>
-            <h3 class="text-xl dark:text-white font-bold">React Native vs Flutter</h3>
-            <p class="text-secondary dark:text-gray-400">A comprehensive comparison of the two leading cross-platform mobile frameworks. Which one should you choose for your next project?</p>
-            <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
-              Post</a>
-          </div>
-        </div>
-
-
-      </div>
-      <button class="p-2 bg-primary w-fit text-white font-medium view-more-posts">View All Posts</button>
-    </section>
-
-
-    <section  class="testimonial-section bg-gray-50 dark:bg-gray-800 px-4 md:px-10 lg:px-20 py-10 md:py-20 flex flex-col gap-10 items-center relative">
-      <h2 class="text-3xl font-bold text-center dark:text-white">What Our Clients Say</h2>
-      <div class="slider-container w-full max-w-4xl mx-auto relative flex items-center justify-center">
-        <button class="prev-btn absolute left-0  rounded-full    z-10" aria-label="Previous testimonial">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 45 45" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M23.72 0C24.61 0.15 25.51 0.259961 26.4 0.459961C35.07 2.34996 40.96 7.45999 43.46 15.99C45.96 24.52 43.92 32.07 37.56 38.21C31.2 44.35 23.74 45.9501 15.56 43.3701C7.38 40.7901 2.21 34.83 0.360001 26.27C0.220001 25.61 0.12 24.94 0 24.27V20.1602C0.0651413 19.9779 0.115309 19.7905 0.150002 19.6001C0.686384 15.0398 2.62992 10.7597 5.71056 7.35474C8.79119 3.94973 12.8559 1.58883 17.34 0.600098C18.44 0.350098 19.57 0.21001 20.68 0.0100098L23.72 0ZM19.66 22.1899C19.92 21.9699 20.15 21.8001 20.34 21.6101C21.96 20.0034 23.57 18.3934 25.17 16.78C25.2923 16.6867 25.3914 16.5664 25.4597 16.4285C25.5279 16.2906 25.5634 16.139 25.5634 15.9851C25.5634 15.8313 25.5279 15.6794 25.4597 15.5415C25.3914 15.4036 25.2923 15.2833 25.17 15.1899C25.0705 15.0755 24.9476 14.9838 24.8096 14.9209C24.6716 14.858 24.5217 14.8254 24.37 14.8254C24.2183 14.8254 24.0684 14.858 23.9304 14.9209C23.7924 14.9838 23.6695 15.0755 23.57 15.1899C23.38 15.3599 23.2 15.54 23.02 15.73L18.19 20.55C16.49 22.24 16.48 22.26 18.19 23.98C19.9 25.7 21.64 27.4402 23.38 29.1702C24.09 29.8702 24.98 29.82 25.38 29.05C25.78 28.28 25.38 27.98 24.96 27.55L19.66 22.1899Z"
-              fill="#CCCCCC" />
-          </svg>
-        </button>
-
-
-        <div class="slider overflow-hidden w-full">
-          <div class="slides flex transition-transform duration-500 ease-in-out">
-            <div class="slide min-w-full text-center px-10">
-              <p class="text-2xl italic text-gray-600 dark:text-gray-300">"Nebula Digital transformed our online presence. Their attention to detail and innovative approach is unmatched. We saw a 200% increase in engagement within the first month."</p>
-              <p class="mt-5 font-bold text-primary">John Doe</p>
-              <p class="text-sm text-secondary dark:text-gray-400">CEO, TechCorp</p>
-            </div>
-             <div class="slide min-w-full text-center px-10">
-              <p class="text-2xl italic text-gray-600 dark:text-gray-300">"The scalability of their solutions allowed us to grow 10x in a year without any hiccups. Their support team is always there when we need them. Highly recommended!"</p>
-              <p class="mt-5 font-bold text-primary">Jane Smith</p>
-              <p class="text-sm text-secondary dark:text-gray-400">CTO, StartupX</p>
-            </div>
-             <div class="slide min-w-full text-center px-10">
-              <p class="text-2xl italic text-gray-600 dark:text-gray-300">"A true partner in digital transformation. They understood our vision better than we did and delivered a product that exceeded our expectations in every way."</p>
-              <p class="mt-5 font-bold text-primary">Mike Johnson</p>
-              <p class="text-sm text-secondary dark:text-gray-400">Founder, FutureFlow</p>
-            </div>
-          </div>
-        </div>
-
-
-        <button class="next-btn absolute right-0  rounded-full    z-10" aria-label="Next testimonial">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 45 45" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M23.7865 0.0100098C24.8965 0.21001 26.0266 0.350098 27.1266 0.600098C31.6107 1.58883 35.6754 3.94973 38.756 7.35474C41.8366 10.7597 43.7802 15.0398 44.3165 19.6001C44.3512 19.7905 44.4014 19.9779 44.4666 20.1602V24.27C44.3466 24.93 44.2466 25.6 44.1066 26.27C42.2566 34.83 37.2465 40.7401 28.9065 43.3701C20.5665 46.0001 13.1065 44.22 6.90651 38.21C0.706514 32.2 -1.48339 24.45 1.00661 15.99C3.49661 7.52999 9.39655 2.34996 18.0665 0.459961C18.9565 0.259961 19.8566 0.15 20.7466 0L23.7865 0.0100098ZM19.4265 27.53C18.9965 27.96 18.6766 28.4 19.0066 29.03C19.3366 29.66 20.2866 29.8501 21.0066 29.1501C22.7466 27.4168 24.4766 25.6866 26.1966 23.96C27.9166 22.24 27.9066 22.22 26.1966 20.53L21.3666 15.71C21.1866 15.52 21.0065 15.3402 20.8165 15.1702C20.717 15.0557 20.5942 14.9638 20.4562 14.9009C20.3182 14.838 20.1682 14.8054 20.0165 14.8054C19.8648 14.8054 19.7149 14.838 19.5769 14.9009C19.4389 14.9638 19.3161 15.0557 19.2166 15.1702C19.0943 15.2635 18.9951 15.3836 18.9269 15.5215C18.8587 15.6594 18.8231 15.8112 18.8231 15.9651C18.8231 16.1189 18.8587 16.2708 18.9269 16.4087C18.9951 16.5466 19.0943 16.6667 19.2166 16.76C20.8166 18.3733 22.4265 19.9834 24.0465 21.5901C24.2365 21.7801 24.4666 21.9502 24.7266 22.1702L19.4265 27.53Z"
-              fill="#CCCCCC" />
-          </svg>
-        </button>
-      </div>
-    </section>
-
-
-    <section class="cta-section bg-primary text-white px-4 md:px-10 lg:px-20 py-10 md:py-20 flex flex-col gap-5 items-center text-center">
-      <h2 class="text-3xl font-bold">Ready to Start Your Digital Journey?</h2>
-      <form class="flex flex-col md:flex-row gap-2 mt-5 w-full md:w-auto items-center">
-        <input type="email" placeholder="Enter your email address" aria-label="email" 
-          class="p-3 rounded-lg  focus:ring-gray-900 focus:outline-none text-black bg-white w-full md:w-80 dark:bg-gray-200">
-        <button type="submit"
-          class="p-3 bg-white text-primary font-bold rounded-lg w-full md:w-auto">Subscribe</button>
-      </form>
-
-      <div class="mt-8">
-        <button id="contact-us-btn" class="text-white border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition-all duration-300">
-          Contact Us
-        </button>
+      <!-- Blur Separator -->
+      <div
+        class="w-full h-20 -mt-20 relative z-20 pointer-events-none bg-gradient-to-t from-white via-white/80 to-transparent dark:from-black dark:via-black/80 backdrop-blur-sm">
       </div>
 
-      <!-- Contact Form Dropdown -->
-      <div id="contact-form-dropdown" class="contact-form-container w-full max-w-2xl bg-white dark:bg-gray-900 rounded-xl mt-6 shadow-2xl p-8 text-left">
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex flex-col gap-2">
-            <label for="name" class="text-gray-700 dark:text-gray-300 font-medium">Name</label>
-            <input type="text" id="name" placeholder="Your Name" class="p-3 text-black rounded-lg border-2 border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none">
-            <p class="text-red-500 text-xs name-error error-message"></p>
+      <section
+        class="features-section px-4 md:px-20 lg:px-40 py-10 md:py-20 flex items-center flex-col gap-10 md:gap-20">
+        <h2 class="text-3xl font-bold w-fit dark:text-white">Why Choose Nebula?</h2>
+
+        <div class="feature-item flex flex-col md:flex-row justify-between items-center">
+          <div class=" feature-right w-1/2 h-64 hidden md:flex items-center justify-center  ">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/mobile/teamUi.webp">
+
+              <img src="/teamUi.webp" class="h-full w-full md:w-3/4" alt="Team working on UI/UX Design" loading="lazy">
+            </picture>
           </div>
-          <div class="flex flex-col gap-2">
-            <label for="contact-email" class="text-gray-700 dark:text-gray-300 font-medium">Email</label>
-            <input type="email" id="contact-email" placeholder="email@example.com" class="p-3  text-black rounded-lg border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none">
-            <p class="text-red-500 text-xs email-error error-message"></p>
+          <div class="feature-left w-full md:w-1/2 flex flex-col gap-5 md:pl-10">
+            <h3 class="text-3xl font-bold dark:text-white">Innovative Design & Strategy</h3>
+            <p class="text-secondary dark:text-gray-400">Our team combines aesthetic excellence with data-driven
+              strategy to deliver products that not only look good but perform exceptionally. We believe that great
+              design is not just about how it looks, but how it works for your users.</p>
+            <button class="p-2 bg-primary w-fit text-white font-medium">Learn More</button>
           </div>
-          <div class="flex flex-col gap-2 md:col-span-2">
-            <label for="message" class="text-gray-700 dark:text-gray-300 font-medium">Message</label>
-            <textarea id="message" rows="4" placeholder="How can we help you?" class="p-3 rounded-lg border-2 text-black border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none"></textarea>
-            <p class="text-red-500 text-xs message-error error-message"></p>
+        </div>
+
+        <h2 class="text-3xl font-bold w-fit dark:text-white">Our Expertise</h2>
+        <div class="feature-item flex flex-col md:flex-row justify-between items-center">
+          <div class="feature-left w-full md:w-1/2 flex flex-col gap-5 md:pr-10">
+            <h3 class="text-3xl font-bold dark:text-white">Scalable Technology Solutions</h3>
+            <p class="text-secondary dark:text-gray-400">Built on robust architectures, our solutions are designed to
+              grow with your business. Whether you are a startup or an enterprise, we ensure stability, security, and
+              performance at every scale.</p>
+            <button class="p-2 bg-primary w-fit text-white font-medium">View Technologies</button>
           </div>
-          <div class="md:col-span-2">
-            <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">
-              Send Message
-            </button>
+          <div class=" feature-right w-1/2 h-64 hidden md:flex items-center justify-center">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/mobile/serverRoom.webp">
+
+              <img src="/serverRoom.webp" class="h-full w-full md:w-3/4" alt="Scalable Server Infrastructure"
+                loading="lazy">
+            </picture>
           </div>
+        </div>
+      </section>
+
+
+      <section
+        class="posts-section bg-itemsBg dark:bg-gray-800  px-4 md:px-10 lg:px-20 py-5 md:py-10 flex flex-col gap-10 items-center">
+        <h2 class="text-3xl font-bold text-center dark:text-white">Latest Insights & <br> Industry Trends</h2>
+        <div class="posts-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
+
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/aiBrain.webp">
+
+                <img src="/aiBrain.webp" class="h-full w-full" alt="Artificial Intelligence Concept" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Tech</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">ARTIFICIAL INTELLIGENCE</p>
+              <h3 class="text-xl dark:text-white font-bold">The Future of AI in Web Development</h3>
+              <p class="text-secondary dark:text-gray-400">Discover how artificial intelligence is reshaping the way we
+                build and interact with the web. From automated testing to intelligent code generation.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center ">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/mimalUi.webp">
+
+                <img src="/mimalUi.webp" class="h-full w-full" alt="Minimalist Interface Design" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Design</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">UI/UX DESIGN</p>
+              <h3 class="text-xl dark:text-white font-bold">Minimalism in Modern Interfaces</h3>
+              <p class="text-secondary dark:text-gray-400">Less is more. Explore the core principles of minimalist
+                design and how removing clutter can improve user engagement and conversion rates.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/cloudeServer.webp">
+
+                <img src="/cloudeServer.webp" class="h-full w-full" alt="Cloud Server Architecture" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Cloud</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">CLOUD COMPUTING</p>
+              <h3 class="text-xl dark:text-white font-bold">Scaling Your Infrastructure</h3>
+              <p class="text-secondary dark:text-gray-400">Strategies for scaling your cloud infrastructure efficiently.
+                Learn about microservices, containerization, and serverless architectures.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/coddingScreen.webp">
+
+                <img src="/coddingScreen.webp" class="h-full w-full" alt="Coding Screen" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Dev</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">DEVELOPMENT</p>
+              <h3 class="text-xl dark:text-white font-bold">Clean Code Practices</h3>
+              <p class="text-secondary dark:text-gray-400">Writing code that is easy to understand and maintain is a
+                crucial skill. Here are top tips for keeping your codebase clean.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/mobileApp.webp">
+
+                <img src="/mobileApp.webp" class="h-full w-full" alt="Mobile Application Development" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Mobile</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">MOBILE APPS</p>
+              <h3 class="text-xl dark:text-white font-bold">React Native vs Flutter</h3>
+              <p class="text-secondary dark:text-gray-400">A comprehensive comparison of the two leading cross-platform
+                mobile frameworks. Which one should you choose for your next project?</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card  bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/lock.webp">
+
+                <img src="/lock.webp" class="h-full w-full" alt="Cybersecurity Shield" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Security</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">CYBERSECURITY</p>
+              <h3 class="text-xl dark:text-white font-bold">Web Security Essentials</h3>
+              <p class="text-secondary dark:text-gray-400">Protecting your web applications from common vulnerabilities.
+                Understanding XSS, CSRF, and SQL Injection attacks.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card hide bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/lock.webp">
+
+                <img src="/lock.webp" class="h-full w-full" alt="Cybersecurity Shield" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Security</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">CYBERSECURITY</p>
+              <h3 class="text-xl dark:text-white font-bold">Web Security Essentials</h3>
+              <p class="text-secondary dark:text-gray-400">Protecting your web applications from common vulnerabilities.
+                Understanding XSS, CSRF, and SQL Injection attacks.</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+          <div class="card hide bg-white dark:bg-gray-950 flex flex-col shadow-md ">
+            <div class="bg-card w-full h-60 text-white  relative flex items-center justify-center">
+              <picture>
+                <source media="(max-width: 767px)" srcset="/mobile/mobileApp.webp">
+
+                <img src="/mobileApp.webp" class="h-full w-full" alt="Mobile Application Development" loading="lazy">
+              </picture>
+              <div class="absolute left-5  px-1 h-6 -bottom-3 bg-primary">
+                <span>Mobile</span>
+              </div>
+            </div>
+
+            <div class="  p-5 flex flex-col gap-4 mt-4">
+              <p class="font-normal text-secondary dark:text-gray-400 text-xs">MOBILE APPS</p>
+              <h3 class="text-xl dark:text-white font-bold">React Native vs Flutter</h3>
+              <p class="text-secondary dark:text-gray-400">A comprehensive comparison of the two leading cross-platform
+                mobile frameworks. Which one should you choose for your next project?</p>
+              <a href="#" class="text-black mt-2 dark:text-white  font-medium border-b-2 border-primary w-28">Read the
+                Post</a>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="p-2 bg-primary w-fit text-white font-medium view-more-posts">View All Posts</button>
+      </section>
+
+
+      <section
+        class="testimonial-section bg-gray-50 dark:bg-gray-800 px-4 md:px-10 lg:px-20 py-10 md:py-20 flex flex-col gap-10 items-center relative">
+        <h2 class="text-3xl font-bold text-center dark:text-white">What Our Clients Say</h2>
+        <div class="slider-container w-full max-w-4xl mx-auto relative flex items-center justify-center">
+          <button class="prev-btn absolute left-0  rounded-full    z-10" aria-label="Previous testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 45 45" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.72 0C24.61 0.15 25.51 0.259961 26.4 0.459961C35.07 2.34996 40.96 7.45999 43.46 15.99C45.96 24.52 43.92 32.07 37.56 38.21C31.2 44.35 23.74 45.9501 15.56 43.3701C7.38 40.7901 2.21 34.83 0.360001 26.27C0.220001 25.61 0.12 24.94 0 24.27V20.1602C0.0651413 19.9779 0.115309 19.7905 0.150002 19.6001C0.686384 15.0398 2.62992 10.7597 5.71056 7.35474C8.79119 3.94973 12.8559 1.58883 17.34 0.600098C18.44 0.350098 19.57 0.21001 20.68 0.0100098L23.72 0ZM19.66 22.1899C19.92 21.9699 20.15 21.8001 20.34 21.6101C21.96 20.0034 23.57 18.3934 25.17 16.78C25.2923 16.6867 25.3914 16.5664 25.4597 16.4285C25.5279 16.2906 25.5634 16.139 25.5634 15.9851C25.5634 15.8313 25.5279 15.6794 25.4597 15.5415C25.3914 15.4036 25.2923 15.2833 25.17 15.1899C25.0705 15.0755 24.9476 14.9838 24.8096 14.9209C24.6716 14.858 24.5217 14.8254 24.37 14.8254C24.2183 14.8254 24.0684 14.858 23.9304 14.9209C23.7924 14.9838 23.6695 15.0755 23.57 15.1899C23.38 15.3599 23.2 15.54 23.02 15.73L18.19 20.55C16.49 22.24 16.48 22.26 18.19 23.98C19.9 25.7 21.64 27.4402 23.38 29.1702C24.09 29.8702 24.98 29.82 25.38 29.05C25.78 28.28 25.38 27.98 24.96 27.55L19.66 22.1899Z"
+                fill="#CCCCCC" />
+            </svg>
+          </button>
+
+
+          <div class="slider overflow-hidden w-full">
+            <div class="slides flex transition-transform duration-500 ease-in-out">
+              <div class="slide min-w-full text-center px-10">
+                <p class="text-2xl italic text-gray-600 dark:text-gray-300">"Nebula Digital transformed our online
+                  presence. Their attention to detail and innovative approach is unmatched. We saw a 200% increase in
+                  engagement within the first month."</p>
+                <p class="mt-5 font-bold text-primary">John Doe</p>
+                <p class="text-sm text-secondary dark:text-gray-400">CEO, TechCorp</p>
+              </div>
+              <div class="slide min-w-full text-center px-10">
+                <p class="text-2xl italic text-gray-600 dark:text-gray-300">"The scalability of their solutions allowed
+                  us to grow 10x in a year without any hiccups. Their support team is always there when we need them.
+                  Highly recommended!"</p>
+                <p class="mt-5 font-bold text-primary">Jane Smith</p>
+                <p class="text-sm text-secondary dark:text-gray-400">CTO, StartupX</p>
+              </div>
+              <div class="slide min-w-full text-center px-10">
+                <p class="text-2xl italic text-gray-600 dark:text-gray-300">"A true partner in digital transformation.
+                  They understood our vision better than we did and delivered a product that exceeded our expectations
+                  in every way."</p>
+                <p class="mt-5 font-bold text-primary">Mike Johnson</p>
+                <p class="text-sm text-secondary dark:text-gray-400">Founder, FutureFlow</p>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="next-btn absolute right-0  rounded-full    z-10" aria-label="Next testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 45 45" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.7865 0.0100098C24.8965 0.21001 26.0266 0.350098 27.1266 0.600098C31.6107 1.58883 35.6754 3.94973 38.756 7.35474C41.8366 10.7597 43.7802 15.0398 44.3165 19.6001C44.3512 19.7905 44.4014 19.9779 44.4666 20.1602V24.27C44.3466 24.93 44.2466 25.6 44.1066 26.27C42.2566 34.83 37.2465 40.7401 28.9065 43.3701C20.5665 46.0001 13.1065 44.22 6.90651 38.21C0.706514 32.2 -1.48339 24.45 1.00661 15.99C3.49661 7.52999 9.39655 2.34996 18.0665 0.459961C18.9565 0.259961 19.8566 0.15 20.7466 0L23.7865 0.0100098ZM19.4265 27.53C18.9965 27.96 18.6766 28.4 19.0066 29.03C19.3366 29.66 20.2866 29.8501 21.0066 29.1501C22.7466 27.4168 24.4766 25.6866 26.1966 23.96C27.9166 22.24 27.9066 22.22 26.1966 20.53L21.3666 15.71C21.1866 15.52 21.0065 15.3402 20.8165 15.1702C20.717 15.0557 20.5942 14.9638 20.4562 14.9009C20.3182 14.838 20.1682 14.8054 20.0165 14.8054C19.8648 14.8054 19.7149 14.838 19.5769 14.9009C19.4389 14.9638 19.3161 15.0557 19.2166 15.1702C19.0943 15.2635 18.9951 15.3836 18.9269 15.5215C18.8587 15.6594 18.8231 15.8112 18.8231 15.9651C18.8231 16.1189 18.8587 16.2708 18.9269 16.4087C18.9951 16.5466 19.0943 16.6667 19.2166 16.76C20.8166 18.3733 22.4265 19.9834 24.0465 21.5901C24.2365 21.7801 24.4666 21.9502 24.7266 22.1702L19.4265 27.53Z"
+                fill="#CCCCCC" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+
+      <section
+        class="cta-section bg-primary text-white px-4 md:px-10 lg:px-20 py-10 md:py-20 flex flex-col gap-5 items-center text-center">
+        <h2 class="text-3xl font-bold">Ready to Start Your Digital Journey?</h2>
+        <form class="flex flex-col md:flex-row gap-2 mt-5 w-full md:w-auto items-center">
+          <input type="email" placeholder="Enter your email address" aria-label="email"
+            class="p-3 rounded-lg  focus:ring-gray-900 focus:outline-none text-black bg-white w-full md:w-80 dark:bg-gray-200">
+          <button type="submit"
+            class="p-3 bg-white text-primary font-bold rounded-lg w-full md:w-auto">Subscribe</button>
         </form>
-      </div>
+
+        <div class="mt-8">
+          <button id="contact-us-btn"
+            class="text-white border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition-all duration-300">
+            Contact Us
+          </button>
+        </div>
+
+        <!-- Contact Form Dropdown -->
+        <div id="contact-form-dropdown"
+          class="contact-form-container w-full max-w-2xl bg-white dark:bg-gray-900 rounded-xl mt-6 shadow-2xl p-8 text-left">
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-gray-700 dark:text-gray-300 font-medium">Name</label>
+              <input type="text" id="name" placeholder="Your Name"
+                class="p-3 text-black rounded-lg border-2 border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none">
+              <p class="text-red-500 text-xs name-error error-message"></p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="contact-email" class="text-gray-700 dark:text-gray-300 font-medium">Email</label>
+              <input type="email" id="contact-email" placeholder="email@example.com"
+                class="p-3  text-black rounded-lg border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none">
+              <p class="text-red-500 text-xs email-error error-message"></p>
+            </div>
+            <div class="flex flex-col gap-2 md:col-span-2">
+              <label for="message" class="text-gray-700 dark:text-gray-300 font-medium">Message</label>
+              <textarea id="message" rows="4" placeholder="How can we help you?"
+                class="p-3 rounded-lg border-2 text-black border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white   outline-none"></textarea>
+              <p class="text-red-500 text-xs message-error error-message"></p>
+            </div>
+            <div class="md:col-span-2">
+              <button type="submit"
+                class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
 
 
-    </section>
+      </section>
 
     </main>
 
 
 
     <footer class="bg-white dark:bg-gray-900 px-4 md:px-10 lg:px-20 py-10">
-      <div class="flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center">
+      <div class="flex flex-col  gap-5 md:gap-10  justify-between items-center">
+
         <div class="links items-center mx-2 font-global font-light text-[21px] flex">
-          <ul class="flex flex-col md:flex-row gap-4 md:gap-10 text-center md:text-left dark:text-white">
+          <ul class="flex flex-row gap-4 md:gap-10 text-center md:text-left dark:text-white">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
         </div>
+
         <div class="social-icons flex gap-4">
-          <a href="#" class="bg-blue-600 text-white p-2 rounded-full" aria-label="Facebook"><img src="/facebook.svg" alt="facebook"
-              class="w-6 h-6"></a>
-          <a href="#" class="bg-blue-400 text-white p-2 rounded-full" aria-label="Twitter"><img src="/twitter.svg" alt="twitter"
-              class="w-6 h-6"></a>
-          <a href="#" class="bg-blue-500 text-white p-2 rounded-full" aria-label="Connect"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.26186V6.42202C0.0449816 6.27079 0.0816878 6.11727 0.109985 5.96206C0.268171 4.80718 0.746177 3.71942 1.48999 2.82192C2.64323 1.46379 4.21682 0.529438 5.9613 0.167136C7.70579 -0.195166 9.52133 0.0353202 11.12 0.821921C11.361 0.945825 11.629 1.00787 11.9 1.0021C13.5529 0.827961 15.2233 0.935995 16.84 1.32192C22.42 2.74192 26.71 7.76214 25.93 13.7921C25.9129 14.0622 25.9792 14.331 26.12 14.5622C26.6283 15.4168 26.9356 16.3759 27.0188 17.3668C27.102 18.3578 26.9587 19.3544 26.6 20.2819C26.2051 21.2562 25.6159 22.14 24.8682 22.8791C24.1206 23.6181 23.2302 24.1971 22.2514 24.5807C21.2726 24.9644 20.226 25.1447 19.1752 25.1105C18.1245 25.0763 17.0918 24.8284 16.14 24.382C15.7234 24.2144 15.279 24.1264 14.83 24.1222C13.4756 24.118 12.1229 24.0278 10.78 23.8522C4.63997 22.6022 0.319993 17.022 1.17999 10.942C1.21516 10.7874 1.19757 10.6255 1.13 10.4821C0.493473 9.5184 0.105266 8.41198 0 7.26186ZM13.6 20.0319C15.5081 20.1257 17.3851 19.5217 18.88 18.3322C20.63 16.8222 21.03 13.3318 18.18 11.9518C17.2928 11.5425 16.3729 11.208 15.43 10.9518C14.09 10.5618 12.72 10.272 11.38 9.88198C11.1018 9.83698 10.8485 9.69488 10.6653 9.48061C10.4822 9.26635 10.3811 8.99392 10.38 8.71206C10.3819 8.40586 10.4879 8.10928 10.6805 7.87124C10.8731 7.6332 11.1409 7.46777 11.44 7.402C12.1709 7.22328 12.9181 7.11936 13.67 7.09194C14.1926 7.05309 14.7151 7.16798 15.1735 7.42202C15.6318 7.67606 16.006 8.05836 16.25 8.52212C16.4458 8.84382 16.6772 9.14252 16.94 9.41225C17.1917 9.64599 17.5139 9.7892 17.856 9.81997C18.198 9.85074 18.5406 9.76725 18.83 9.58218C19.1187 9.43188 19.3423 9.1807 19.4584 8.87661C19.5745 8.57252 19.5751 8.23626 19.46 7.93178C19.2913 7.39576 18.9975 6.9079 18.6027 6.50796C18.208 6.10801 17.7238 5.80767 17.19 5.63198C14.9594 4.7222 12.4776 4.63737 10.19 5.39223C9.2767 5.63485 8.45771 6.14686 7.83997 6.86196C7.50007 7.27938 7.26715 7.77361 7.16132 8.30141C7.05548 8.82922 7.07997 9.37457 7.23267 9.89077C7.38536 10.407 7.66161 10.8785 8.03754 11.2638C8.41347 11.6491 8.87773 11.9368 9.39001 12.1022C10.4557 12.5004 11.5443 12.8343 12.65 13.1022C13.65 13.3822 14.71 13.5818 15.7 13.9318C16.0293 14.0348 16.3178 14.2393 16.5242 14.5158C16.7307 14.7923 16.8447 15.1268 16.85 15.4718C16.8818 15.8357 16.7933 16.2001 16.5983 16.5089C16.4032 16.8178 16.1122 17.0541 15.77 17.1818C15.0583 17.4739 14.3064 17.656 13.54 17.7218C12.8002 17.8389 12.0428 17.6905 11.4021 17.3024C10.7614 16.9143 10.2789 16.3121 10.04 15.6022C9.96998 15.4322 9.89 15.272 9.81 15.112C9.62543 14.7283 9.29964 14.431 8.90082 14.2819C8.50199 14.1328 8.06099 14.1436 7.66998 14.3122C7.48391 14.3876 7.31539 14.5006 7.17499 14.6442C7.03458 14.7877 6.92533 14.9584 6.854 15.1461C6.78268 15.3338 6.7508 15.5344 6.76044 15.735C6.77007 15.9356 6.82098 16.1322 6.90997 16.3122C7.17381 17.2001 7.70881 17.9831 8.44 18.5519C9.94625 19.6081 11.7629 20.1291 13.6 20.0319Z" fill="white"/>
-</svg></a>
-          <a href="#" class="bg-blue-700 text-white p-2 rounded-full" aria-label="LinkedIn"><img src="/linkedin.svg" alt="linkedin"
-              class="w-6 h-6"></a>
-          <a href="#" class="bg-green-500 text-white p-2 rounded-full" aria-label="WhatsApp"><img src="/whatsapp.svg" alt="whatsapp"
-              class="w-6 h-6"></a>
+          <a href="#" class="bg-blue-600 text-white p-2 rounded-full" aria-label="Facebook"><img src="/facebook.svg"
+              alt="facebook" class="w-6 h-6"></a>
+          <a href="#" class="bg-blue-400 text-white p-2 rounded-full" aria-label="Twitter"><img src="/twitter.svg"
+              alt="twitter" class="w-6 h-6"></a>
+          <a href="#" class="bg-blue-500 text-white p-2 rounded-full" aria-label="Connect"><svg
+              xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 7.26186V6.42202C0.0449816 6.27079 0.0816878 6.11727 0.109985 5.96206C0.268171 4.80718 0.746177 3.71942 1.48999 2.82192C2.64323 1.46379 4.21682 0.529438 5.9613 0.167136C7.70579 -0.195166 9.52133 0.0353202 11.12 0.821921C11.361 0.945825 11.629 1.00787 11.9 1.0021C13.5529 0.827961 15.2233 0.935995 16.84 1.32192C22.42 2.74192 26.71 7.76214 25.93 13.7921C25.9129 14.0622 25.9792 14.331 26.12 14.5622C26.6283 15.4168 26.9356 16.3759 27.0188 17.3668C27.102 18.3578 26.9587 19.3544 26.6 20.2819C26.2051 21.2562 25.6159 22.14 24.8682 22.8791C24.1206 23.6181 23.2302 24.1971 22.2514 24.5807C21.2726 24.9644 20.226 25.1447 19.1752 25.1105C18.1245 25.0763 17.0918 24.8284 16.14 24.382C15.7234 24.2144 15.279 24.1264 14.83 24.1222C13.4756 24.118 12.1229 24.0278 10.78 23.8522C4.63997 22.6022 0.319993 17.022 1.17999 10.942C1.21516 10.7874 1.19757 10.6255 1.13 10.4821C0.493473 9.5184 0.105266 8.41198 0 7.26186ZM13.6 20.0319C15.5081 20.1257 17.3851 19.5217 18.88 18.3322C20.63 16.8222 21.03 13.3318 18.18 11.9518C17.2928 11.5425 16.3729 11.208 15.43 10.9518C14.09 10.5618 12.72 10.272 11.38 9.88198C11.1018 9.83698 10.8485 9.69488 10.6653 9.48061C10.4822 9.26635 10.3811 8.99392 10.38 8.71206C10.3819 8.40586 10.4879 8.10928 10.6805 7.87124C10.8731 7.6332 11.1409 7.46777 11.44 7.402C12.1709 7.22328 12.9181 7.11936 13.67 7.09194C14.1926 7.05309 14.7151 7.16798 15.1735 7.42202C15.6318 7.67606 16.006 8.05836 16.25 8.52212C16.4458 8.84382 16.6772 9.14252 16.94 9.41225C17.1917 9.64599 17.5139 9.7892 17.856 9.81997C18.198 9.85074 18.5406 9.76725 18.83 9.58218C19.1187 9.43188 19.3423 9.1807 19.4584 8.87661C19.5745 8.57252 19.5751 8.23626 19.46 7.93178C19.2913 7.39576 18.9975 6.9079 18.6027 6.50796C18.208 6.10801 17.7238 5.80767 17.19 5.63198C14.9594 4.7222 12.4776 4.63737 10.19 5.39223C9.2767 5.63485 8.45771 6.14686 7.83997 6.86196C7.50007 7.27938 7.26715 7.77361 7.16132 8.30141C7.05548 8.82922 7.07997 9.37457 7.23267 9.89077C7.38536 10.407 7.66161 10.8785 8.03754 11.2638C8.41347 11.6491 8.87773 11.9368 9.39001 12.1022C10.4557 12.5004 11.5443 12.8343 12.65 13.1022C13.65 13.3822 14.71 13.5818 15.7 13.9318C16.0293 14.0348 16.3178 14.2393 16.5242 14.5158C16.7307 14.7923 16.8447 15.1268 16.85 15.4718C16.8818 15.8357 16.7933 16.2001 16.5983 16.5089C16.4032 16.8178 16.1122 17.0541 15.77 17.1818C15.0583 17.4739 14.3064 17.656 13.54 17.7218C12.8002 17.8389 12.0428 17.6905 11.4021 17.3024C10.7614 16.9143 10.2789 16.3121 10.04 15.6022C9.96998 15.4322 9.89 15.272 9.81 15.112C9.62543 14.7283 9.29964 14.431 8.90082 14.2819C8.50199 14.1328 8.06099 14.1436 7.66998 14.3122C7.48391 14.3876 7.31539 14.5006 7.17499 14.6442C7.03458 14.7877 6.92533 14.9584 6.854 15.1461C6.78268 15.3338 6.7508 15.5344 6.76044 15.735C6.77007 15.9356 6.82098 16.1322 6.90997 16.3122C7.17381 17.2001 7.70881 17.9831 8.44 18.5519C9.94625 19.6081 11.7629 20.1291 13.6 20.0319Z"
+                fill="white" />
+            </svg></a>
+          <a href="#" class="bg-blue-700 text-white p-2 rounded-full" aria-label="LinkedIn"><img src="/linkedin.svg"
+              alt="linkedin" class="w-6 h-6"></a>
+          <a href="#" class="bg-green-500 text-white p-2 rounded-full" aria-label="WhatsApp"><svg
+              xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.2877 7.91089C12.5477 7.51089 12.7577 7.18132 12.9577 6.85132C14.0977 4.97132 15.2276 3.09094 16.3676 1.22094C16.4934 0.945859 16.6774 0.701681 16.9069 0.504636C17.1364 0.307591 17.4059 0.162551 17.6969 0.0798315C17.9878 -0.00288783 18.2932 -0.0216944 18.5921 0.025144C18.8909 0.0719824 19.176 0.183545 19.4276 0.351316C21.8076 1.54132 24.1677 2.76093 26.5477 3.95093C26.8638 4.08692 27.1298 4.31776 27.309 4.61157C27.4881 4.90538 27.5716 5.24777 27.5477 5.59106C27.5477 10.9411 27.5477 16.2911 27.5477 21.5911C27.5477 23.5211 26.1477 24.391 24.3877 23.511C20.5977 21.621 16.8377 19.7013 13.0677 17.7913L10.7777 16.6409V20.2009C10.7777 20.7309 10.7777 21.261 10.7777 21.801C10.8145 22.1579 10.7506 22.5182 10.5933 22.8406C10.4359 23.163 10.1914 23.4347 9.88742 23.6252C9.58343 23.8158 9.23214 23.9172 8.87338 23.9182C8.51463 23.9193 8.16279 23.8199 7.8577 23.6311C6.0077 22.7311 4.17768 21.7813 2.33768 20.8513C2.02768 20.6913 1.69767 20.5511 1.38767 20.3811C0.968319 20.1697 0.616664 19.8449 0.372713 19.4436C0.128763 19.0423 0.00229842 18.5807 0.00766209 18.1111C0.00766209 12.7411 0.00766209 7.37122 0.00766209 2.00122C-0.0226313 1.67671 0.0372759 1.35001 0.180758 1.05737C0.32424 0.76473 0.545737 0.517306 0.820834 0.342527C1.09593 0.167748 1.41396 0.0722079 1.73984 0.0666479C2.06572 0.0610879 2.3868 0.145984 2.6677 0.311277C5.1277 1.52128 7.57766 2.771 10.0077 4.031C10.3254 4.22929 10.5844 4.50901 10.7577 4.84106C11.2577 5.85106 11.7677 6.84089 12.2877 7.91089ZM9.55765 13.761C9.55765 11.081 9.55765 8.39098 9.55765 5.76098C9.58516 5.60279 9.55745 5.44024 9.47916 5.30005C9.40087 5.15985 9.27677 5.05052 9.12766 4.99096C6.84766 3.86096 4.58765 2.70102 2.30765 1.55102C1.49765 1.14102 1.1677 1.35124 1.1677 2.27124V18.031C1.14418 18.3305 1.21426 18.63 1.36832 18.8879C1.52238 19.1459 1.7528 19.3496 2.02768 19.4709C4.02768 20.4709 6.12765 21.5611 8.18765 22.5911C9.11765 23.0611 9.55765 22.7812 9.55765 21.7312V13.761ZM26.3177 5.21118C26.1477 5.11118 26.0277 5.02093 25.8877 4.95093C23.5877 3.78093 21.2777 2.60116 18.9677 1.44116C18.1177 1.01116 17.8377 1.09089 17.3377 1.91089C15.9677 4.16089 14.6177 6.41112 13.2277 8.65112C13.1213 8.79412 13.0597 8.96528 13.0508 9.14331C13.0419 9.32134 13.086 9.49822 13.1776 9.65112C14.0676 11.3511 14.9376 13.071 15.8076 14.781C16.4977 16.141 17.1977 17.4909 17.9477 18.9509L26.3177 5.21118ZM19.0077 19.531C21.0677 20.531 23.0077 21.591 25.0077 22.531C25.7977 22.911 26.2777 22.5309 26.2777 21.6609V8.02124C26.2777 7.90124 26.2777 7.78094 26.2777 7.47094L19.0077 19.531ZM10.8877 7.77124H10.7577C10.7577 10.1812 10.7577 12.5912 10.7577 15.0012C10.7592 15.0835 10.7799 15.1642 10.8181 15.2371C10.8563 15.31 10.9109 15.373 10.9777 15.4211C12.6277 16.2811 14.2977 17.1213 16.1377 18.0413C14.3377 14.5213 12.6077 11.1512 10.8877 7.77124Z"
+                fill="white" />
+            </svg></a>
         </div>
+
+
       </div>
       <div
-        class="mt-10 border-t dark:border-gray-800 pt-5 flex flex-col md:flex-row gap-5 md:gap-0 justify-between text-secondary dark:text-gray-400 text-sm text-center md:text-left">
-        <div class="flex flex-col md:flex-row gap-2 md:gap-10">
-          <span>Nebula Digital Solutions Inc.</span>
-          <span>+1 (555) 123-4567</span>
-          <span>contact@nebuladigital.com</span>
-          <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+        class="mt-10 border-t dark:border-gray-800 pt-5 flex flex-col items-center gap-5 md:gap-10 justify-between text-secondary dark:text-gray-400 text-sm text-center md:text-left">
+        <div class="flex flex-col items-center md:flex-row gap-2 md:gap-10">
+
+          <div class="inline-flex   gap-1">
+            <img class="h-fit p-1" src="public/icons/Location-Icon.svg" alt="location icon">
+            <span>Nebula Digital Solutions Inc.</span>
+          </div>
+          <div class="inline-flex   gap-1">
+            <img class="h-fit p-1" src="public/icons/Phone-Icon.svg" alt="phone icon">
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="inline-flex   gap-1">
+            <img class="h-fit p-1" src="public/icons/Email-Icon.svg" alt="email icon">
+            <span>contact@nebuladigital.com</span>
+          </div>
+          <div class="inline-flex   gap-1">
+            <img class="h-fit p-1" src="public/icons/Time-Icon.svg" alt="time icon">
+            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+          </div>
         </div>
+
         <div>
           <span>&copy; 2024 Nebula Digital. All Rights Reserved. Empowering businesses through innovation.</span>
         </div>
@@ -407,7 +514,7 @@
 
 
   </div>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="test.js"></script>
 </body>
 
 </html>
