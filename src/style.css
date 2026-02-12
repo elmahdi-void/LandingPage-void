@@ -32,15 +32,36 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
 /* Post Cards Animation */
 .posts-grid .card {
   opacity: 0;
+  overflow: hidden; /* Crucial: hides the content as it shrinks */
   transform: translateY(30px);
+  max-height: 700px; /* Set to a value that can accommodate the content */
   /* Combine animations */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out, background-color 0.5s ease, color 0.5s ease;
+  transition: opacity 0.6s ease-out,
+   transform 0.6s ease-out,
+    background-color 0.5s ease, 
+    color 0.5s ease ,
+    max-height 0.2s ease;
+}
+
+.posts-grid  {
+   transition: 
+   transform 0.6s ease-out,
+    background-color 0.5s ease, 
+    color 0.5s ease ,
+    max-height 0.4s ease;
+
 }
 
 .posts-grid .card.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+.posts-grid .card.hide {
+  max-height: 0;
+  pointer-events: none;
+}
+
 
 /* Contact Form Dropdown Animation */
 .contact-form-container {
@@ -78,4 +99,4 @@ h1, h2, h3, h4, h5, h6, p, a, span, svg, path {
 
 
 
-
+.coontact-form-container .error-message { opacity: 0; transition: opacity 0.3s ease-in-out; } .contact-form-container .error-message.visible { opacity: 1; }
