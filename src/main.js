@@ -69,15 +69,15 @@ const submitForm =  (formInputs, errorMessages, validationPatterns, contactForm)
 
     // Simple feedback animation
     btn.textContent = "Sending...";
-    btn.disabled = true;
-
+  btn.disabled = true;
+  
     if (
-      !formInputs.name ||
-      !validationPatterns.name.test(formInputs.name.value)
+      !formInputs.phone ||
+      !validationPatterns.phone.test(formInputs.phone.value)
     ) {
-      errorMessages.name.textContent = "Please enter a valid name";
-      errorMessages.name.classList.add("visible");
-      formInputs.name.classList.add("input-error");
+      errorMessages.phone.textContent = "Please enter a valid phone number";
+      errorMessages.phone.classList.add("visible");
+      formInputs.phone.classList.add("input-error");
     } else if (
       !formInputs.email ||
       !validationPatterns.email.test(formInputs.email.value)
@@ -93,14 +93,7 @@ const submitForm =  (formInputs, errorMessages, validationPatterns, contactForm)
         "Message must be less than 20 characters";
       errorMessages.message.classList.add("visible");
       formInputs.message.classList.add("input-error");
-    } else if (
-      !formInputs.phone ||
-      !validationPatterns.phone.test(formInputs.phone.value)
-    ) {
-      errorMessages.phone.textContent = "Please enter a valid phone number";
-      errorMessages.phone.classList.add("visible");
-      formInputs.phone.classList.add("input-error");
-    } else {
+    }  else {
       btn.textContent = "Message Sent!";
       btn.classList.add("bg-green-600");
       btn.classList.remove("bg-primary");
@@ -226,29 +219,24 @@ const contactForm = contactDropdown?.querySelector("form");
 
 if (contactForm) {
   const validationPatterns = {
-    name: /^[a-zA-Z\s]{2,}$/,
     phone : /^\+?[0-9\s\-]{7,15}$/,
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     message: /^.{1,19}$/,
   };
 
   const formInputs = {
-    name: contactForm.querySelector("#name"),
     email: contactForm.querySelector("#contact-email"),
     phone: contactForm.querySelector("#phone"),
     message: contactForm.querySelector("#message"),
   };
 
   const errorMessages = {
-    name: contactForm.querySelector(".name-error"),
     email: contactForm.querySelector(".email-error"),
     phone: contactForm.querySelector(".phone-error"),
     message: contactForm.querySelector(".message-error"),
   };
 
-  formInputs.name.addEventListener("focus", () => {
-    formInputs.name.classList.remove("input-error");
-  });
+
   
   formInputs.email.addEventListener("focus", () => {
     formInputs.email.classList.remove("input-error");
@@ -257,6 +245,7 @@ if (contactForm) {
   formInputs.message.addEventListener("focus", () => {
     formInputs.message.classList.remove("input-error");
   });
+
 
   formInputs.phone.addEventListener("focus", () => {
     formInputs.phone.classList.remove("input-error");
@@ -272,7 +261,9 @@ if (contactForm) {
 const viewMoreBtn = document.querySelector(".view-more-posts");
 const miniToShow = 6;
 if (viewMoreBtn) {
+  console.log("View More button clicked");
   viewMoreBtn.addEventListener("click", () => {
+    console.log("View More button clicked");
     const Cards = document.querySelectorAll(".posts-grid .card");
     const hiddenCards = Array.from(Cards).slice(miniToShow);
 
