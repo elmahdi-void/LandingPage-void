@@ -81,12 +81,12 @@ function submitForm(formInputs, errorMessages, validationPatterns, contactForm) 
     btn.classList.add("bg-green-600");
     btn.classList.remove("bg-primary");
     contactForm.reset(); 
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.disabled = false;
+  
       btn.classList.add("bg-primary");
       btn.classList.remove("bg-green-600");
       if (contactDropdown) contactDropdown.classList.remove("active");
-    }, 2000);
-  }
+    }
+    
+    btn.textContent = originalText;
+    btn.disabled = false;
 }
