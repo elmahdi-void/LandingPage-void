@@ -62,9 +62,11 @@ function submitForm(formInputs, errorMessages, validationPatterns, contactForm) 
 
   // Simple feedback animation
   btn.textContent = "Sending...";
-  btn.disabled = true;
+    btn.disabled = true;
+    
 
-  if (!formInputs.phone || !validationPatterns.phone.test(formInputs.phone.value)) {
+    setTimeout(() => {
+         if (!formInputs.phone || !validationPatterns.phone.test(formInputs.phone.value)) {
     errorMessages.phone.textContent = "Please enter a valid phone number";
     errorMessages.phone.classList.add("visible");
     formInputs.phone.classList.add("input-error");
@@ -82,11 +84,15 @@ function submitForm(formInputs, errorMessages, validationPatterns, contactForm) 
     btn.classList.remove("bg-primary");
     contactForm.reset(); 
   
+
+    }
+        setTimeout(() => {
       btn.classList.add("bg-primary");
       btn.classList.remove("bg-green-600");
-      if (contactDropdown) contactDropdown.classList.remove("active");
-    }
-    
-    btn.textContent = originalText;
-    btn.disabled = false;
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }, 1000);
+    }, 2000); 
+
+ 
 }
