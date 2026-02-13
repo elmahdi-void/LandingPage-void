@@ -8,7 +8,10 @@ export function initContactForm() {
       contactDropdown.classList.toggle("active");
       if (contactDropdown.classList.contains("active")) {
         setTimeout(() => {
-          contactDropdown.scrollIntoView({ behavior: "smooth", block: "center" });
+          contactDropdown.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         }, 300);
       }
     });
@@ -23,76 +26,78 @@ export function initContactForm() {
       message: /^.{1,19}$/, // Note: Original code had strict check < 20 chars
     };
 
-    const formInputs = {
-      email: contactForm.querySelector("#contact-email"),
-      phone: contactForm.querySelector("#phone"),
-      message: contactForm.querySelector("#message"),
-    };
-
     const errorMessages = {
-      email: contactForm.querySelector(".email-error"),
-      phone: contactForm.querySelector(".phone-error"),
-      message: contactForm.querySelector(".message-error"),
+      phone: "Please enter a valid phone number",
+      email: "Please enter a valid email",
+      message: "Message must be less than 20 characters",
     };
 
-    formInputs.email?.addEventListener("focus", () => {
-      formInputs.email?.classList.remove("input-error");
-    });
-
-    formInputs.message?.addEventListener("focus", () => {
-      formInputs.message.classList.remove("input-error");
-    });
-
-    formInputs.phone?.addEventListener("focus", () => {
-      formInputs.phone.classList.remove("input-error");
+    const formInputs = contactForm.querySelectorAll("input, textarea");
+    let errorElement = {};
+    formInputs.forEach((input) => {
+      input.addEventListener("focus", () => {
+        input?.classList.remove("input-error");
+      });
+      errorElement[input.id] = contactForm.querySelector(`.${input.id}-error`);
     });
 
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      submitForm(formInputs, errorMessages, validationPatterns, contactForm);
+      submitForm(
+        formInputs,
+        errorElement,
+        errorMessages,
+        validationPatterns,
+        contactForm,
+      );
     });
   }
 }
 
-function submitForm(formInputs, errorMessages, validationPatterns, contactForm) {
-  const contactDropdown = document.getElementById("contact-form-dropdown");
+function submitForm(
+  formInputs,
+  errorElement,
+  errorMessages,
+  validationPatterns,
+  contactForm,
+) {
   const btn = contactForm.querySelector('button[type="submit"]');
   if (!btn) return;
   const originalText = btn.textContent;
 
   // Simple feedback animation
   btn.textContent = "Sending...";
-    btn.disabled = true;
-    
+  btn.disabled = true;
 
     setTimeout(() => {
-         if (!formInputs.phone || !validationPatterns.phone.test(formInputs.phone.value)) {
-    errorMessages.phone.textContent = "Please enter a valid phone number";
-    errorMessages.phone.classList.add("visible");
-    formInputs.phone.classList.add("input-error");
-  } else if (!formInputs.email || !validationPatterns.email.test(formInputs.email.value)) {
-    errorMessages.email.textContent = "Please enter a valid email";
-    errorMessages.email.classList.add("visible");
-    formInputs.email.classList.add("input-error");
-  } else if (!formInputs.message || !validationPatterns.message.test(formInputs.message.value)) {
-    errorMessages.message.textContent = "Message must be less than 20 characters";
-    errorMessages.message.classList.add("visible");
-    formInputs.message.classList.add("input-error");
-  } else {
-    btn.textContent = "Message Sent!";
-    btn.classList.add("bg-green-600");
-    btn.classList.remove("bg-primary");
-    contactForm.reset(); 
-  
-
-    }
-        setTimeout(() => {
+      let error = false;
+    formInputs.forEach((input) => {
+      const fieldName = input.id;
+      if (!input.value || !validationPatterns[fieldName].test(input.value)) {
+        errorElement[fieldName].textContent = errorMessages[fieldName];
+        errorElement[fieldName]?.classList.add("visible");
+          input.classList.add("input-error");
+          error = true;
+      } else {
+        errorElement[fieldName].textContent = "";
+        errorElement[fieldName]?.classList.remove("visible");
+        input?.classList.remove("input-error");
+      }
+    });
+      
+        if (!error) {
+          btn.textContent = "Message Sent!";
+          btn.classList.remove("bg-primary");
+        btn.classList.add("bg-green-600");
+        contactForm.reset();
+        }
+      
+      setTimeout(() => {
       btn.classList.add("bg-primary");
       btn.classList.remove("bg-green-600");
       btn.textContent = originalText;
       btn.disabled = false;
     }, 1000);
-    }, 2000); 
+  }, 2000);
 
- 
 }
